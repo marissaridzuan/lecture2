@@ -5,7 +5,7 @@ import { Rhino3dmLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124.0/examp
 
 // declare variables to store scene, camera, and renderer
 let scene, camera, renderer
-const model = 'Rhino_Logo.3dm'
+const model = 'Chain.3dm'
 
 // call functions
 init()
@@ -20,7 +20,7 @@ function init () {
     // create a scene and a camera
     scene = new THREE.Scene()
     scene.background = new THREE.Color(1,1,1)
-    camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 )
+    camera = new THREE.PerspectiveCamera( 55, window.innerWidth / window.innerHeight, 0.1, 1000 )
     camera.position.y = - 30
 
     // create the renderer and add it to the html
